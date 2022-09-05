@@ -18,7 +18,7 @@ public class CurrencyBeanPostProcessor implements BeanPostProcessor {
             Field[] fields = bean.getClass().getDeclaredFields();
 
             for(int i = 0; i < fields.length; i++){
-                if (fields[i].isAnnotationPresent(Currency.class)){
+                if (fields[i].isAnnotationPresent(CurrencyField.class)){
                     fields[i].setAccessible(true);
                     try {
                         sort((int[]) fields[i].get(bean));
