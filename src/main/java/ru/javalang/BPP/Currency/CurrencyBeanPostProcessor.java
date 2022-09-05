@@ -1,4 +1,4 @@
-package ru.javalang.BPP;
+package ru.javalang.BPP.Currency;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
@@ -23,7 +23,7 @@ public class CurrencyBeanPostProcessor implements BeanPostProcessor {
                     try {
                         sort((int[]) fields[i].get(bean));
                     } catch (IllegalAccessException e) {
-                        throw new RuntimeException(e);
+                        e.printStackTrace();
                     }
                 }
             }

@@ -1,4 +1,4 @@
-package ru.javalang.BPP;
+package ru.javalang.BPP.Currency;
 
 public @interface CurrencyField {
 }
