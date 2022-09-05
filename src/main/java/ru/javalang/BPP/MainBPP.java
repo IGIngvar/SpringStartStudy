@@ -12,7 +12,7 @@ public class MainBPP {
     public static void main(String[] args) {
 
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(Dollar.class, CurrencyBeanPostProcessor.class);
-        ApplicationContext applicationContext1 = new AnnotationConfigApplicationContext(InjectRandomIntBeanPostProcessor.class, MyBean.class, ColorFactory.class);
+        ApplicationContext applicationContext1 = new AnnotationConfigApplicationContext(InjectRandomIntBeanPostProcessor.class, MyBean.class);
         System.out.println(applicationContext1.getBean(MyBean.class));
         System.out.println(applicationContext.getBean(Dollar.class));
 
