@@ -1,4 +1,4 @@
-package ru.javalang;
+package ru.javalang.BPP;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
